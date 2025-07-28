@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/VY4kxMQj/image-2.png",
+    "title": "JF Barbed Wire- 270 GSM",
+    "subtitle": "₹4,995.00"
+  },
+   {
+    "id": 2,
+    "image": "https://i.ibb.co/21x7BJc2/image-8.png",
+    "title": "FGC RustFree Fencing Poles",
+    "subtitle": "₹499.00 – ₹1,589.00"
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/jPcVCjtT/image-Copy.png",
+    "title": "PVC COATED WIRE MESH",
+    "subtitle": "₹1,260.00 – ₹10,750.00"
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/j9QZLnPG/image-1.png",
+    "title": "JF Bluelink Mesh",
+    "subtitle": "₹3,067.50 – ₹6,362.50"
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/4ZQNFgX1/service-1.jpg",
+    "title": "JF Truck",
+    "subtitle": "₹1000.50 – ₹3362.50"
+  },
+ 
+  {
+    "id": 5,
+    "image": "",
+    "title": "JF Water pamp",
+    "subtitle": "₹2000.50 – ₹6,362.50"
+  }
+ 
+
+]

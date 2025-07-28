@@ -1,9 +1,10 @@
 import React from 'react';
+import AgriculturalCards from '../Agricultural/AgriculturalCards';
 
 const Home = () => {
     return (
         <div>
-            <h1>This is home </h1>
+         <AgriculturalCards></AgriculturalCards>
         </div>
     );
 };
