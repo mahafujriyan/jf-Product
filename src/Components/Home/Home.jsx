@@ -4,6 +4,7 @@ import AgriculturalCards from '../Agricultural/AgriculturalCards';
 import Partners from '../Partners/Partners';
 import LandasecopeCards from '../Landscope/LandasecopeCards';
 import Use from '../Usees/Use';
+import LoveUs from '../LoveUs/LoveUs';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
          <LandasecopeCards></LandasecopeCards>
          <Partners></Partners>
          <Use></Use>
+         <LoveUs></LoveUs>
         </div>
     );
 };
