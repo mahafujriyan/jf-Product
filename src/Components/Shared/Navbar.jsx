@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router';
 import { FaSearch, FaUser, FaMoon, FaBars, FaTimes } from 'react-icons/fa';
 import Logo from './Logo';
 const Navbar = () => {
-      const [isOpen, setIsOpen] = useState(false);
+      const [isOpen, setIsOpen] = useState(false)
      const navLinks = 
      <>
      <li><NavLink to='/'>Home </NavLink></li>
