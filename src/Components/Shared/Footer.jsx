@@ -61,7 +61,7 @@ const Footer = () => {
       
       
     </footer>
-    <div className='flex justify-around text-2xl flex-col md:flex-row'>
+    <div className='flex justify-around text-xl flex-col md:flex-row'>
         <h3>Copyright © 2025 JF Products. All rights reserved</h3>
         <div className='flex gap-3'>
             <FaFacebook></FaFacebook>
