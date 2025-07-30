@@ -18,7 +18,7 @@ const { cartItems } = useCart()
      <>
      <li><NavLink to='/'>Home </NavLink></li>
      <li><NavLink>Shop</NavLink></li>
-     <li> <NavLink>Blog </NavLink></li>
+     <li> <NavLink to='/blogs'>Blog </NavLink></li>
        <li> <NavLink to='/contact'>Contact</NavLink></li>
      </>
     return (
@@ -37,7 +37,7 @@ const { cartItems } = useCart()
 
         {/* Right side */}
         <div className="hidden md:flex gap-4 items-center text-gray-600 text-lg relative">
-          <button title="Search"><FaSearch /></button>
+         
           <Link to="/cart" className="relative" title="Cart">
           <FaShoppingCart className="text-xl" />
           {cartItems?.length > 0 && (
@@ -94,7 +94,7 @@ const { cartItems } = useCart()
             {navLinks}
           </ul>
           <div className="flex gap-4 mt-3 text-lg text-gray-700 items-center">
-            <button><FaSearch /></button>
+          
             <Link to="/cart" className="relative text-xl">
               <FaShoppingCart />
               {cartItems?.length > 0 && (

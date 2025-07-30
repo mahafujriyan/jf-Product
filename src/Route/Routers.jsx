@@ -6,6 +6,8 @@ import ContactUs from '../Contact/ContactUs';
 import SingUp from '../Pages/Auth/SingUp';
 import LogIn from '../Pages/Auth/LogIn';
 import CartPage from '../Pages/Cartpage/CartPage';
+import BlogDetails from '../Pages/Blog/BlogDetails';
+import Blogs from '../Pages/Blog/Blogs';
 
 
   
@@ -35,6 +37,14 @@ const router = createBrowserRouter([
         {
           path:'cart',
           element:<CartPage></CartPage>
+        },
+        {
+          path:'blogs',
+          element:<Blogs></Blogs>
+        },
+        {
+          path:'blog/:id',
+          element:<BlogDetails></BlogDetails>
         }
     ]
   },
