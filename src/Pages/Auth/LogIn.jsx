@@ -1,18 +1,18 @@
 import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { AuthContext } from '../Context/AuthContext';
-import { useLocation, useNavigate } from 'react-router';
+import { Link, useLocation, useNavigate } from 'react-router';
 import SocialLogIn from './SocialLogIn';
 
 const LogIn = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
-        const{singIn}=useContext(AuthContext)
+        const{singInUser}=useContext(AuthContext)
         const navigate=useNavigate()
         const location=useLocation()
          const from = location.state?.from || '/';
 
     const onSubmit = data => {
-    singIn(data.email, data.password)
+    singInUser(data.email, data.password)
             .then(result => {
                 console.log(result.user);
                 navigate(from);
@@ -20,7 +20,7 @@ const LogIn = () => {
             .catch(error => console.log(error))
     }
     return (
-        <div className="card bg-base-100 w-full  mx-auto max-w-sm shrink-0 shadow-2xl">
+        <div className="card bg-base-100 w-full  mx-auto max-w-sm shrink-0 shadow-2xl my-3">
             <div className="card-body">
                 <h1 className="text-5xl font-bold">Please Login</h1>
                 <form onSubmit={handleSubmit(onSubmit)}>

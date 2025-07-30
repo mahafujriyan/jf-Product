@@ -5,6 +5,7 @@ import { AuthContext } from './AuthContext';
 import auth from '../../firebase.config';
 
 
+
 const AuthProvider = ({children}) => {
     const [loading,setLoading]=useState(true)
     const [user,setUser]=useState(null)
@@ -79,6 +80,7 @@ const AuthProvider = ({children}) => {
     }
     },[])
     
+ 
 
     const authInfo={
         loading,
@@ -89,6 +91,7 @@ const AuthProvider = ({children}) => {
         signOutUser,
      googleLogin ,
       updateUser,
+  
 
         
     }

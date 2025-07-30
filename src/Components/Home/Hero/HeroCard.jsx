@@ -6,23 +6,24 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const slides = [
-  {
-    id: 1,
-    image: "https://i.ibb.co/VY4kxMQj/image-2.png",
-    title: "Powerful Barbed Wire",
-    subtitle: "JF Barbed Wire- 270 GSM",
-  },
+  
    {
-    "id": 2,
+    "id": 1,
     "image": "https://i.ibb.co/21x7BJc2/image-8.png",
     "title": "FGC RustFree Fencing Poles",
     "subtitle": "₹499.00 – ₹1,589.00"
   },
   {
-    "id": 3,
+    "id": 2,
     "image": "https://i.ibb.co/jPcVCjtT/image-Copy.png",
     "title": "PVC COATED WIRE MESH",
     "subtitle": "₹1,260.00 – ₹10,750.00"
+  },
+  {
+    id: 3,
+    image: "https://i.ibb.co/VY4kxMQj/image-2.png",
+    title: "Powerful Barbed Wire",
+    subtitle: "JF Barbed Wire- 270 GSM",
   },
   {
     "id": 4,

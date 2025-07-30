@@ -3,11 +3,11 @@ import { useNavigate } from 'react-router';
 import { AuthContext } from '../Context/AuthContext';
 
 const SocialLogIn = () => {
-     const { signInWithGoogle } = useContext(AuthContext);
+     const { googleLogin } = useContext(AuthContext);
 const from = location.state?.from || '/';
 const navigate =useNavigate()
     const handleGoogleSignIn = () => {
-        signInWithGoogle()
+        googleLogin()
             .then(result => {
                 console.log(result.user)
                 navigate(from)

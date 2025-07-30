@@ -5,6 +5,7 @@ import Home from '../Components/Home/Home';
 import ContactUs from '../Contact/ContactUs';
 import SingUp from '../Pages/Auth/SingUp';
 import LogIn from '../Pages/Auth/LogIn';
+import CartPage from '../Pages/Cartpage/CartPage';
 
 
   
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
         {
           path:'logIn',
           element:<LogIn></LogIn>
+        },
+        {
+          path:'cart',
+          element:<CartPage></CartPage>
         }
     ]
   },
