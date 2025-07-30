@@ -1,6 +1,10 @@
 import React from 'react';
 import { useCart } from '../../Pages/Context/CartProvider';
-
+import { motion } from 'framer-motion';
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
 const LandscapeCard = ({item}) => {
   const { addToCart } = useCart(); 
   
@@ -8,7 +12,8 @@ const LandscapeCard = ({item}) => {
       addToCart(item);
     };
     return (
-         <div className="w-[200px] bg-white shadow-md rounded-md overflow-hidden hover:shadow-xl transition">
+         <motion.div  variants={cardVariants}
+          className="w-[200px] bg-white shadow-md rounded-md overflow-hidden hover:shadow-xl transition">
       <img
         src={item.image || "https://via.placeholder.com/200"}
         alt={item.title}
@@ -22,7 +27,7 @@ const LandscapeCard = ({item}) => {
           Buy Now
         </button>
       </div>
-    </div>
+    </motion.div>
     );
 };
 

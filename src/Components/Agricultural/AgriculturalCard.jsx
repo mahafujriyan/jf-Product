@@ -1,6 +1,10 @@
 import React from 'react';
 import { useCart } from '../../Pages/Context/CartProvider';
-
+import { motion } from "framer-motion";
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
 const AgriculturalCard = ({product}) => {
  const { addToCart } = useCart(); 
 
@@ -8,7 +12,8 @@ const AgriculturalCard = ({product}) => {
     addToCart(product);
   };
     return (
-      <div className="w-[200px] bg-white shadow-md rounded-md overflow-hidden hover:shadow-xl transition">
+      <motion.div   variants={cardVariants}
+      className="w-[200px] bg-white shadow-md rounded-md overflow-hidden hover:shadow-xl transition">
       <img
         src={product.image || "https://via.placeholder.com/200"}
         alt={product.title}
@@ -22,7 +27,7 @@ const AgriculturalCard = ({product}) => {
           Buy Now
         </button>
       </div>
-    </div>
+    </motion.div>
     );
 };
 
