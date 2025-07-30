@@ -26,14 +26,14 @@ const ContactUs = () => {
     );
   }; 
     return(
-   <div className=" p-6 rounded-xl shadow-xl bg-gradient-to-br from-[#0d1b3d] to-[#003973] text-white">
+   <div className="my-3 p-6 rounded-xl shadow-xl bg-gradient-to-br from-[#0d1b3d] to-[#003973] text-white">
       <h2 className="text-2xl font-bold mb-6">Contact Us</h2>
       <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
         <input
           type="text"
           name="name"
           placeholder="Your Name"
-          className="input input-bordered bg-[#102344] placeholder-gray-300 text-white"
+          className="input input-bordered bg-[#102344] rounded-2xl placeholder-gray-300 text-white"
           required
         />
 
@@ -42,7 +42,7 @@ const ContactUs = () => {
             type="email"
             name="email"
             placeholder="Email"
-            className="input input-bordered bg-[#102344] placeholder-gray-300 text-white w-full pr-10"
+            className="input input-bordered bg-[#102344] placeholder-gray-300 text-white w-full pr-10 rounded-2xl"
             required
           />
           <MdOutlineEmail className="absolute right-3 top-3 text-gray-400" size={20} />
@@ -53,7 +53,7 @@ const ContactUs = () => {
             type="tel"
             name="phone"
             placeholder="Phone *"
-            className="input input-bordered bg-[#102344] placeholder-gray-300 text-white w-full pr-10"
+            className="input input-bordered bg-[#102344] placeholder-gray-300 text-white w-full pr-10 rounded-2xl"
             required
           />
           <MdPhone className="absolute right-3 top-3 text-gray-400" size={20} />
@@ -63,7 +63,7 @@ const ContactUs = () => {
           name="message"
           rows="4"
           placeholder="Write message"
-          className="textarea textarea-bordered bg-[#102344] placeholder-gray-300 text-white"
+          className="rounded-xl textarea textarea-bordered bg-[#102344] placeholder-gray-300 text-white"
         />
 
         <button

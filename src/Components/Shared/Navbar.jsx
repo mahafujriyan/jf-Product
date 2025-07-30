@@ -9,7 +9,7 @@ const Navbar = () => {
      <li><NavLink to='/'>Home </NavLink></li>
      <li><NavLink>Shop</NavLink></li>
      <li> <NavLink>Blog </NavLink></li>
-       <li> <NavLink>Contact</NavLink></li>
+       <li> <NavLink to='/contact'>Contact</NavLink></li>
      </>
     return (
        <div className="shadow-md border-b sticky top-0 bg-white z-50">
@@ -20,7 +20,7 @@ const Navbar = () => {
           {navLinks}
         </ul>
 
-        {/* logo */}
+    
         <div className="flex-shrink-0">
          <Logo></Logo>
         </div>
@@ -41,14 +41,14 @@ const Navbar = () => {
         </button>
       </nav>
 
-      {/* dropdown */}
+    
       {isOpen && (
         <div className="md:hidden px-4 pb-4 space-y-2 bg-white border-t">
           <ul className="space-y-2 text-sm font-medium text-gray-700">
             {navLinks}
           </ul>
           <div className="flex gap-4 mt-3 text-lg text-gray-700">
-            <Link to="/login"><FaUser /></Link>
+            <Link to="/logIn"><FaUser /></Link>
             <button><FaSearch /></button>
             <button><FaMoon /></button>
           </div>

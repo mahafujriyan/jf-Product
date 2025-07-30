@@ -49,7 +49,7 @@ const slides = [
 
 const HeroCard= () => {
   return (
-    <div className="w-full h-[80vh] my-3">
+    <div className="w-full h-[80vh] my-3 rounded-xl">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

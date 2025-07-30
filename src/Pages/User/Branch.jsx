@@ -31,7 +31,7 @@ const Branch = () => {
           </button>
         ))}
       </div>
-         <div className='flex gap-3 justify-between w-full'>
+         <div className='flex flex-col lg:flex-row gap-3 justify-between w-full'>
   <div className='w-1/2'>
     <ContactUs />
   </div>
